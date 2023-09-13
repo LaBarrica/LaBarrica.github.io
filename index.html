@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Recetas La Barrica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/La Barrica negro_B.png">
+
+</head>
+<body>
+<!--TODO: Revisar nav de las recetas para que aparezca logo de la barrica y que no funcione el scroll-->
+
+    <header>
+
+    <div class="nav container">
+
+        <a href="index.html" class="logo"><span><img style="height: 50px; width: 50px; margin-top: -5px;" src="img/La Barrica_B.png"></span></a>
+        <!-- <a href="" class="logo"><img src="img/La Barrica negro_Logo.png"></a> -->
+
+        <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" id="search" placeholder="Type to search" />
+                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+    </div>
+    </header>
+
+    <!--front section-->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title"><img src="img/La Barrica blanco_Logo.png"></h2>
+            <span class="home-subtitle">Disfruta de nuestras recetas con los mejores licores</span>
+        </div>
+    </section>
+
+    <!--categories as filters-->
+    <div class="post-filter container">
+        <span class="filter-item active-filter" id="all" data-filter="all">All</span>
+        <span class="filter-item" id="vodka" data-filter="vodka">Vodka</span>
+        <span class="filter-item" id="tequila" data-filter="tequila">Tequila</span>
+        <span class="filter-item" id="gin" data-filter="gin">Gin</span>
+        <span class="filter-item" id="whisky" data-filter="whisky">Whisky</span>
+        <span class="filter-item" id="cognac" data-filter="cognac">Cognac</span>
+        <span class="filter-item" id="ron" data-filter="ron">Ron</span>
+    </div>
+
+    <!--post container-->
+    <section class="post container">
+        <!--Post 1-->
+        <div class="post-box vodka">
+            <img src="img/Grey Goose Martini.jpg" alt="" class="post-img">
+            <h2 class="category">Vodka</h2>
+            <a href="posts/martini-grey-goose.html" class="post-title">Martini Grey Goose</a>
+            <span class="post-date">11 Sep 2023</span>
+            <p class="post-description">El vodka GREY GOOSE® luce su largo y gratificante final en este cóctel emblemático. Ideal como aperitivo o para ocasiones especiales.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 2-->
+        <div class="post-box gin">
+            <img src="img/Bombay Sapphire.jpg" alt=""   class="post-img">
+            <h2 class="category">Gin</h2>
+            <a href="posts/gin-tonic-bombay.html" class="post-title">Gin Tonic Bombay Sapphire</a>
+            <span class="post-date">10 Sep 2023</span>
+            <p class="post-description">La máxima expresión del Gin & Tonic clásico por excelencia. Bombay Sapphire con su esencia floral terrosa permite realzar el sabor fresco y puro de los cítricos y el enebro. Increíblemente gratificante y sin complicaciones.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 3-->
+        <div class="post-box tequila">
+            <img src="img/Mayorazgo-Margarita.jpg" alt="" class="post-img">
+            <h2 class="category">Tequila</h2>
+            <a href="posts/margarita-tequila-mayorazgo.html" class="post-title">Margarita Remedios</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">El Tequila Mayorazgo con sus notas de roble y miel nos ayuda a crear un margarita que te sorprendera tanto por su simpleza como por su sabor.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 4-->
+        <div class="post-box vodka">
+            <img src="img/moscow-mule-skyy.jpg" alt="" class="post-img">
+            <h2 class="category">Vodka</h2>
+            <a href="posts/moscow-mule-skyy.html" class="post-title">Moscow Mule Skyy</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Conoce el Moscow Mule, un cóctel refrescante que, a pesar de su nombre se creó en California, Estados Unidos, en la década del 40.​</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 5-->
+        <div class="post-box whisky">
+            <img src="img/irish coffee signal hill.jpg" alt="" class="post-img">
+            <h2 class="category">Whisky</h2>
+            <a href="posts/irish-gingerbread-coffee.html" class="post-title">Irish Gingebread Coffee</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">La version de Signal Hill de uno de los cócteles mas famosos en el mundo del whisky, dandole un toque más festivo con canela y jarabe de jengibre.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 6-->
+        <div class="post-box whisky">
+            <img src="img/wild turkey cocktail.jpg" alt="" class="post-img">
+            <h2 class="category">Whisky</h2>
+            <a href="posts/wild-turkey-bourbon.html" class="post-title">Bourbon Bramble Wild turkey</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Un cóctel para mostrar lo mejor del Whisky Wild Turkey Bourbon dando un toque dulce a vainilla y caramelo junto a citricos y romero haciendo de este una experiencia inolvidable.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 7-->
+        <div class="post-box tequila">
+            <img src="img/Authentic Paloma Jimador.jpg" alt="" class="post-img">
+            <h2 class="category">Tequila</h2>
+            <a href="posts/authentic-paloma.html" class="post-title">Authentic Paloma Jimador</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Si buscas probar algo nuevo con tequila disfruta de este authentic paloma con El Jimador Reposado con un toque mas frutal y acido.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 8-->
+        <div class="post-box cognac">
+            <img src="img/Remy Old Fashioned.jpg" alt="" class="post-img">
+            <h2 class="category">Cognac</h2>
+            <a href="posts/remy-old-fashioned.html" class="post-title">The Remy Old Fashioned</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Toma un clasico al siguiente nivel con Remy Martin XO como protagonista de este increible y simple cóctel, dando a resaltar todas las notas de este maravilloso cognac.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 9-->
+        <div class="post-box gin">
+            <img src="img/tom_collins gm.jpg" alt="" class="post-img">
+            <h2 class="category">Gin</h2>
+            <a href="posts/tom-collins-mg.html" class="post-title">Tom Collins MG</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Uno de los cócteles mas conocidos del mundo, sencillo y como una buena alternativa al gin & tonic, sencillo y con bajo contenido alcohólico.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+
+        <!--Post 10-->
+        <div class="post-box vodka">
+            <img src="img/Bloody_Mary.jpg" alt="" class="post-img">
+            <h2 class="category">Vodka</h2>
+            <a href="posts/finlandia-bloody-mary.html" class="post-title">Finlandia Bloody Mary</a>
+            <span class="post-date">14 Sep 2023</span>
+            <p class="post-description">Un toque nórdico para el clásico Bloody Mary.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 11-->
+        <div class="post-box ron">
+            <img src="img/Bacardi_Cubalibre.jpg" alt="" class="post-img">
+            <h2 class="category">Ron</h2>
+            <a href="posts/bacardi-cuba-libre.html" class="post-title">Cuba Libre</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">En honor a la independencia de Cuba. El capitán propuso un brindis: "Por Cuba Libre", y así nació el Cuba Libre original.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 12-->
+        <div class="post-box otros">
+            <img src="img/French Gimlet St Germain.jpg" alt="" class="post-img">
+            <h2 class="category">Otros</h2>
+            <a href="posts/french gimlet.html" class="post-title">French Gimlet</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Cóctel St Germain: ¡un truco francés! El gimlet francés es un gimlet de ginebra al que se le añade un poco de este licor de flor de saúco.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+
+        <!--Post 13-->
+        <div class="post-box ron">
+            <img src="img/Bacardi_Pinacolada_Headerbanner_Desktop_PBX.jpg" alt="" class="post-img">
+            <h2 class="category">Ron</h2>
+            <a href="posts/bacardi-pina-colada.html" class="post-title">Bacardi Piña Colada</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Los creadores de la Piña Colada cubana original, un suave cóctel de ron que sabe mucho mejor con agua fresca de coco y piña natural, tal como se hacía en 1922.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 14-->
+        <div class="post-box cognac">
+            <img src="img/Remy Ginger VSOP.jpg" alt="" class="post-img">
+            <h2 class="category">Cognac</h2>
+            <a href="posts/remy-ginger.html" class="post-title">Remy Ginger</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">El trago perfecto para mostrar la versatilidad, la elegancia y los aromas frutales del icónico VSOP de Rémy Martin.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        <!--Post 15-->
+        <div class="post-box whisky">
+            <img src="img/Gentleman Manhattan.png" alt="" class="post-img">
+            <h2 class="category">Whisky</h2>
+            <a href="posts/gentleman-manhattan.html" class="post-title">Gentleman´s Manhattan</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Un clásico y refinado cóctel, centrado en el whiskey..</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+
+        <div class="post-box tequila">
+            <img src="img/tequila jarana.jpg" alt="" class="post-img">
+            <h2 class="category">Tequila</h2>
+            <a href="posts/tom-collins-mg.html" class="post-title">Tequila Sour</a>
+            <span class="post-date">28 Ago 2023</span>
+            <p class="post-description">Un cóctel para aquellos que tengan un gusto a los sabores acidos, con tequila jarana disfruta de esta bebida con toques acidos y frutales.</p>
+
+            <div class="profile">
+                <img src="img/La Barrica negro_B.png" alt="" class="profile-img">
+                <span class="profile-name">La Barrica</span>
+            </div>
+        </div>
+        
+    </section>
+
+    <ul id="pagination" class="listPage">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+
+    <!--footer-->
+    <div class="footer container">
+        <p>&#169; La Barrica All Rights Reserved</p>
+        <div class="social">
+            <a href="https://www.facebook.com/labarrica.sv/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/labarrica.sv/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.tiktok.com/@labarrica.sv"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </div>
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!--main script-->
+    <script src="js/main.js"></script>
+    <script src="js/pagination.js"></script>
+</body>
+</html>
